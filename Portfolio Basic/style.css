@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+    height: 40pt;
+    width: 100%;
+    position: sticky;
+    top: 0pt;
+}
+li{
+    display: flex;
+    float: left;    
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+li>a{
+    color: black;
+    text-decoration: none;
+}
+li>a:hover{
+    color: royalblue;
+    text-decoration: none;
+}
+.first{
+    margin-bottom: 20pt;
+    background-color: royalblue;
+    display: flex;
+    height: 75pt;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.bcgrnd1{
+    display: flex;
+    height: 300pt;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 50pt;
+    padding-right: 50pt;
+}
+.intro{
+    margin-left: 50pt;
+}
+.bcgrnd2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30pt;
+}
+.containers{
+    width: 20%;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    height: 100%;   
+    border-radius: 20pt;
+    border: solid 1pt rgb(204, 202, 202);
+}
+.bcgrnd2>div{
+    transition: transform .2s; 
+    /* We have defined the time to be taken to reach the transformation */
+}
+.bcgrnd2>div:hover{
+    transform: scale(1.05);
+    /* This transform comes under the CSS transition which allow the webpage to be more attractive. */
+}
+button{
+    height: 30pt;
+    width: 80pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20pt;
+    border-radius: 10pt;
+    border: 0;
+    background-color:royalblue;
+    color: white;
+    transition-duration: .2s;
+}
+button:hover{
+    color: royalblue;
+    background-color: white;
+    border: solid 1pt royalblue;
+}
+.bcgrnd3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.hrank, .linkedin, .git, .leetcd{
+    padding: 30pt; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position:sticky;
+    bottom:0pt;
+    left: 0pt;
+    width: 100%;
+    height: 40pt;
+    background-color: rgb(207, 206, 206);
+    border-top: solid 1pt black;
+}
